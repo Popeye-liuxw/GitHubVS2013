@@ -1,0 +1,922 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC7587BC-695F-4970-9291-C159FEC84B03}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EAPP.CRM.Web</RootNamespace>
+    <AssemblyName>EAPP.CRM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxPro.2, Version=6.10.6.2, Culture=neutral, PublicKeyToken=4735ae9824c7d3ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxPro.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddContacts.aspx" />
+    <Content Include="AddCustomer.aspx" />
+    <Content Include="AddFllowUpPlan.aspx" />
+    <Content Include="AddUser.aspx" />
+    <Content Include="Area.aspx" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\css\default.css" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\html\calendar.html" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\html\calendarbottom.html" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\html\calendartop.html" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\html\crystalexportdialog.htm" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\html\crystalprinthost.html" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\calendar.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\crlogo.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\export.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\exportd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\export_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\First.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Firstd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\first_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\gotopage.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\gotopaged.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\gotopage_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\grouptree.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\grouptreed.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\grouptreepressed.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\grouptree_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Last.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Lastd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\last_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Next.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Nextd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\next_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Prev.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Prevd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\prev_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\print.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\printd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\print_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Refresh.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\refreshd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\refresh_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\Search.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\searchd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\search_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\up.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\upd.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\toolbar\up_over.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\begindots.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\beginminus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\beginplus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\blank.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\blankdots.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\dots.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\lastdots.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\lastminus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\lastplus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\Magnify.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\minus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\minusbox.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\plus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\plusbox.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\singleminus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\images\tree\singleplus.gif" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\calendar_param.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\dt_param.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\export.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\KeyDownEvent.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\print.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\prompts_param.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_chs.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_cht.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_de.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_en.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_es.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_fr.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_it.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_ja.js" />
+    <Content Include="aspnet_client\system_web\2_0_50727\CrystalReportWebFormViewer4\js\strings_ko.js" />
+    <Content Include="Assigning.aspx" />
+    <Content Include="bin\AjaxPro.2.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="ChangePassWord.aspx" />
+    <Content Include="Control\Area.ascx" />
+    <Content Include="CSS\login.css" />
+    <Content Include="CSS\main.css" />
+    <Content Include="Customer.aspx" />
+    <Content Include="CustomerCombine.aspx" />
+    <Content Include="CustomerList.aspx" />
+    <Content Include="CustomerSource.aspx" />
+    <Content Include="CustomerState.aspx" />
+    <Content Include="CustomerTrade.aspx" />
+    <Content Include="CustomerType.aspx" />
+    <Content Include="Department.aspx" />
+    <Content Include="EditContacts.aspx" />
+    <Content Include="EditCustomer.aspx" />
+    <Content Include="EditFllowUpPlan.aspx" />
+    <Content Include="EditUser.aspx" />
+    <Content Include="help\index.htm" />
+    <Content Include="Images\calbtn.gif" />
+    <Content Include="Images\chart.JPG" />
+    <Content Include="Images\chart2.JPG" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\tool_bg.gif" />
+    <Content Include="JS\base.js" />
+    <Content Include="JS\build\animation\animation-debug.js" />
+    <Content Include="JS\build\animation\animation-min.js" />
+    <Content Include="JS\build\animation\animation.js" />
+    <Content Include="JS\build\assets\skins\sam\ajax-loader.gif" />
+    <Content Include="JS\build\assets\skins\sam\asc.gif" />
+    <Content Include="JS\build\assets\skins\sam\autocomplete.css" />
+    <Content Include="JS\build\assets\skins\sam\back-h.png" />
+    <Content Include="JS\build\assets\skins\sam\back-v.png" />
+    <Content Include="JS\build\assets\skins\sam\bar-h.png" />
+    <Content Include="JS\build\assets\skins\sam\bar-v.png" />
+    <Content Include="JS\build\assets\skins\sam\bg-h.gif" />
+    <Content Include="JS\build\assets\skins\sam\bg-v.gif" />
+    <Content Include="JS\build\assets\skins\sam\blankimage.png" />
+    <Content Include="JS\build\assets\skins\sam\button.css" />
+    <Content Include="JS\build\assets\skins\sam\calendar.css" />
+    <Content Include="JS\build\assets\skins\sam\carousel.css" />
+    <Content Include="JS\build\assets\skins\sam\check0.gif" />
+    <Content Include="JS\build\assets\skins\sam\check1.gif" />
+    <Content Include="JS\build\assets\skins\sam\check2.gif" />
+    <Content Include="JS\build\assets\skins\sam\colorpicker.css" />
+    <Content Include="JS\build\assets\skins\sam\container.css" />
+    <Content Include="JS\build\assets\skins\sam\datatable.css" />
+    <Content Include="JS\build\assets\skins\sam\desc.gif" />
+    <Content Include="JS\build\assets\skins\sam\dt-arrow-dn.png" />
+    <Content Include="JS\build\assets\skins\sam\dt-arrow-up.png" />
+    <Content Include="JS\build\assets\skins\sam\editor-knob.gif" />
+    <Content Include="JS\build\assets\skins\sam\editor-sprite-active.gif" />
+    <Content Include="JS\build\assets\skins\sam\editor-sprite.gif" />
+    <Content Include="JS\build\assets\skins\sam\editor.css" />
+    <Content Include="JS\build\assets\skins\sam\header_background.png" />
+    <Content Include="JS\build\assets\skins\sam\hue_bg.png" />
+    <Content Include="JS\build\assets\skins\sam\imagecropper.css" />
+    <Content Include="JS\build\assets\skins\sam\layout.css" />
+    <Content Include="JS\build\assets\skins\sam\layout_sprite.png" />
+    <Content Include="JS\build\assets\skins\sam\loading.gif" />
+    <Content Include="JS\build\assets\skins\sam\logger.css" />
+    <Content Include="JS\build\assets\skins\sam\menu-button-arrow-disabled.png" />
+    <Content Include="JS\build\assets\skins\sam\menu-button-arrow.png" />
+    <Content Include="JS\build\assets\skins\sam\menu.css" />
+    <Content Include="JS\build\assets\skins\sam\menubaritem_submenuindicator.png" />
+    <Content Include="JS\build\assets\skins\sam\menubaritem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\assets\skins\sam\menuitem_checkbox.png" />
+    <Content Include="JS\build\assets\skins\sam\menuitem_checkbox_disabled.png" />
+    <Content Include="JS\build\assets\skins\sam\menuitem_submenuindicator.png" />
+    <Content Include="JS\build\assets\skins\sam\menuitem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\assets\skins\sam\paginator.css" />
+    <Content Include="JS\build\assets\skins\sam\picker_mask.png" />
+    <Content Include="JS\build\assets\skins\sam\profilerviewer.css" />
+    <Content Include="JS\build\assets\skins\sam\progressbar.css" />
+    <Content Include="JS\build\assets\skins\sam\resize.css" />
+    <Content Include="JS\build\assets\skins\sam\simpleeditor.css" />
+    <Content Include="JS\build\assets\skins\sam\skin.css" />
+    <Content Include="JS\build\assets\skins\sam\slider.css" />
+    <Content Include="JS\build\assets\skins\sam\split-button-arrow-active.png" />
+    <Content Include="JS\build\assets\skins\sam\split-button-arrow-disabled.png" />
+    <Content Include="JS\build\assets\skins\sam\split-button-arrow-focus.png" />
+    <Content Include="JS\build\assets\skins\sam\split-button-arrow-hover.png" />
+    <Content Include="JS\build\assets\skins\sam\split-button-arrow.png" />
+    <Content Include="JS\build\assets\skins\sam\sprite.png" />
+    <Content Include="JS\build\assets\skins\sam\tabview.css" />
+    <Content Include="JS\build\assets\skins\sam\treeview-loading.gif" />
+    <Content Include="JS\build\assets\skins\sam\treeview-sprite.gif" />
+    <Content Include="JS\build\assets\skins\sam\treeview.css" />
+    <Content Include="JS\build\assets\skins\sam\wait.gif" />
+    <Content Include="JS\build\assets\skins\sam\yuitest.css" />
+    <Content Include="JS\build\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\autocomplete\assets\autocomplete-core.css" />
+    <Content Include="JS\build\autocomplete\assets\skins\sam\autocomplete-skin.css" />
+    <Content Include="JS\build\autocomplete\assets\skins\sam\autocomplete.css" />
+    <Content Include="JS\build\autocomplete\autocomplete-debug.js" />
+    <Content Include="JS\build\autocomplete\autocomplete-min.js" />
+    <Content Include="JS\build\autocomplete\autocomplete.js" />
+    <Content Include="JS\build\base\base-min.css" />
+    <Content Include="JS\build\base\base.css" />
+    <Content Include="JS\build\button\assets\button-core.css" />
+    <Content Include="JS\build\button\assets\skins\sam\button-skin.css" />
+    <Content Include="JS\build\button\assets\skins\sam\button.css" />
+    <Content Include="JS\build\button\assets\skins\sam\menu-button-arrow-disabled.png" />
+    <Content Include="JS\build\button\assets\skins\sam\menu-button-arrow.png" />
+    <Content Include="JS\build\button\assets\skins\sam\split-button-arrow-active.png" />
+    <Content Include="JS\build\button\assets\skins\sam\split-button-arrow-disabled.png" />
+    <Content Include="JS\build\button\assets\skins\sam\split-button-arrow-focus.png" />
+    <Content Include="JS\build\button\assets\skins\sam\split-button-arrow-hover.png" />
+    <Content Include="JS\build\button\assets\skins\sam\split-button-arrow.png" />
+    <Content Include="JS\build\button\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\button\button-debug.js" />
+    <Content Include="JS\build\button\button-min.js" />
+    <Content Include="JS\build\button\button.js" />
+    <Content Include="JS\build\button\_notes\dwsync.xml" />
+    <Content Include="JS\build\calendar\assets\calendar-core.css" />
+    <Content Include="JS\build\calendar\assets\calendar.css" />
+    <Content Include="JS\build\calendar\assets\calgrad.png" />
+    <Content Include="JS\build\calendar\assets\callt.gif" />
+    <Content Include="JS\build\calendar\assets\calrt.gif" />
+    <Content Include="JS\build\calendar\assets\calx.gif" />
+    <Content Include="JS\build\calendar\assets\skins\sam\calendar-skin.css" />
+    <Content Include="JS\build\calendar\assets\skins\sam\calendar.css" />
+    <Content Include="JS\build\calendar\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\calendar\calendar-debug.js" />
+    <Content Include="JS\build\calendar\calendar-min.js" />
+    <Content Include="JS\build\calendar\calendar.js" />
+    <Content Include="JS\build\calendar\_notes\dwsync.xml" />
+    <Content Include="JS\build\carousel\assets\ajax-loader.gif" />
+    <Content Include="JS\build\carousel\assets\carousel-core.css" />
+    <Content Include="JS\build\carousel\assets\skins\sam\ajax-loader.gif" />
+    <Content Include="JS\build\carousel\assets\skins\sam\carousel-skin.css" />
+    <Content Include="JS\build\carousel\assets\skins\sam\carousel.css" />
+    <Content Include="JS\build\carousel\carousel-debug.js" />
+    <Content Include="JS\build\carousel\carousel-min.js" />
+    <Content Include="JS\build\carousel\carousel.js" />
+    <Content Include="JS\build\charts\assets\charts.swf" />
+    <Content Include="JS\build\charts\assets\expressinstall.swf" />
+    <Content Include="JS\build\charts\charts-debug.js" />
+    <Content Include="JS\build\charts\charts-min.js" />
+    <Content Include="JS\build\charts\charts.js" />
+    <Content Include="JS\build\colorpicker\assets\colorpicker-core.css" />
+    <Content Include="JS\build\colorpicker\assets\hue_thumb.png" />
+    <Content Include="JS\build\colorpicker\assets\picker_mask.png" />
+    <Content Include="JS\build\colorpicker\assets\picker_thumb.png" />
+    <Content Include="JS\build\colorpicker\assets\skins\sam\colorpicker-skin.css" />
+    <Content Include="JS\build\colorpicker\assets\skins\sam\colorpicker.css" />
+    <Content Include="JS\build\colorpicker\assets\skins\sam\hue_bg.png" />
+    <Content Include="JS\build\colorpicker\assets\skins\sam\picker_mask.png" />
+    <Content Include="JS\build\colorpicker\colorpicker-debug.js" />
+    <Content Include="JS\build\colorpicker\colorpicker-min.js" />
+    <Content Include="JS\build\colorpicker\colorpicker.js" />
+    <Content Include="JS\build\connection\connection-debug.js" />
+    <Content Include="JS\build\connection\connection-min.js" />
+    <Content Include="JS\build\connection\connection.js" />
+    <Content Include="JS\build\connection\connection.swf" />
+    <Content Include="JS\build\connection\connection_core-debug.js" />
+    <Content Include="JS\build\connection\connection_core-min.js" />
+    <Content Include="JS\build\connection\connection_core.js" />
+    <Content Include="JS\build\connection\_notes\dwsync.xml" />
+    <Content Include="JS\build\container\assets\alrt16_1.gif" />
+    <Content Include="JS\build\container\assets\blck16_1.gif" />
+    <Content Include="JS\build\container\assets\close12_1.gif" />
+    <Content Include="JS\build\container\assets\container-core.css" />
+    <Content Include="JS\build\container\assets\container.css" />
+    <Content Include="JS\build\container\assets\hlp16_1.gif" />
+    <Content Include="JS\build\container\assets\info16_1.gif" />
+    <Content Include="JS\build\container\assets\skins\sam\container-skin.css" />
+    <Content Include="JS\build\container\assets\skins\sam\container.css" />
+    <Content Include="JS\build\container\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\container\assets\tip16_1.gif" />
+    <Content Include="JS\build\container\assets\warn16_1.gif" />
+    <Content Include="JS\build\container\container-debug.js" />
+    <Content Include="JS\build\container\container-min.js" />
+    <Content Include="JS\build\container\container.js" />
+    <Content Include="JS\build\container\container_core-debug.js" />
+    <Content Include="JS\build\container\container_core-min.js" />
+    <Content Include="JS\build\container\container_core.js" />
+    <Content Include="JS\build\container\_notes\dwsync.xml" />
+    <Content Include="JS\build\cookie\cookie-debug.js" />
+    <Content Include="JS\build\cookie\cookie-min.js" />
+    <Content Include="JS\build\cookie\cookie.js" />
+    <Content Include="JS\build\datasource\datasource-debug.js" />
+    <Content Include="JS\build\datasource\datasource-min.js" />
+    <Content Include="JS\build\datasource\datasource.js" />
+    <Content Include="JS\build\datasource\_notes\dwsync.xml" />
+    <Content Include="JS\build\datatable\assets\datatable-core.css" />
+    <Content Include="JS\build\datatable\assets\datatable.css" />
+    <Content Include="JS\build\datatable\assets\skins\sam\datatable-skin.css" />
+    <Content Include="JS\build\datatable\assets\skins\sam\datatable.css" />
+    <Content Include="JS\build\datatable\assets\skins\sam\dt-arrow-dn.png" />
+    <Content Include="JS\build\datatable\assets\skins\sam\dt-arrow-up.png" />
+    <Content Include="JS\build\datatable\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\datatable\datatable-debug.js" />
+    <Content Include="JS\build\datatable\datatable-min.js" />
+    <Content Include="JS\build\datatable\datatable.js" />
+    <Content Include="JS\build\datatable\_notes\dwsync.xml" />
+    <Content Include="JS\build\datemath\datemath-debug.js" />
+    <Content Include="JS\build\datemath\datemath-min.js" />
+    <Content Include="JS\build\datemath\datemath.js" />
+    <Content Include="JS\build\dom\dom-debug.js" />
+    <Content Include="JS\build\dom\dom-min.js" />
+    <Content Include="JS\build\dom\dom.js" />
+    <Content Include="JS\build\dom\_notes\dwsync.xml" />
+    <Content Include="JS\build\dragdrop\dragdrop-debug.js" />
+    <Content Include="JS\build\dragdrop\dragdrop-min.js" />
+    <Content Include="JS\build\dragdrop\dragdrop.js" />
+    <Content Include="JS\build\dragdrop\_notes\dwsync.xml" />
+    <Content Include="JS\build\editor\assets\editor-core.css" />
+    <Content Include="JS\build\editor\assets\simpleeditor-core.css" />
+    <Content Include="JS\build\editor\assets\skins\sam\blankimage.png" />
+    <Content Include="JS\build\editor\assets\skins\sam\editor-knob.gif" />
+    <Content Include="JS\build\editor\assets\skins\sam\editor-skin.css" />
+    <Content Include="JS\build\editor\assets\skins\sam\editor-sprite-active.gif" />
+    <Content Include="JS\build\editor\assets\skins\sam\editor-sprite.gif" />
+    <Content Include="JS\build\editor\assets\skins\sam\editor.css" />
+    <Content Include="JS\build\editor\assets\skins\sam\simpleeditor-skin.css" />
+    <Content Include="JS\build\editor\assets\skins\sam\simpleeditor.css" />
+    <Content Include="JS\build\editor\editor-debug.js" />
+    <Content Include="JS\build\editor\editor-min.js" />
+    <Content Include="JS\build\editor\editor.js" />
+    <Content Include="JS\build\editor\simpleeditor-debug.js" />
+    <Content Include="JS\build\editor\simpleeditor-min.js" />
+    <Content Include="JS\build\editor\simpleeditor.js" />
+    <Content Include="JS\build\element-delegate\element-delegate-debug.js" />
+    <Content Include="JS\build\element-delegate\element-delegate-min.js" />
+    <Content Include="JS\build\element-delegate\element-delegate.js" />
+    <Content Include="JS\build\element\element-debug.js" />
+    <Content Include="JS\build\element\element-min.js" />
+    <Content Include="JS\build\element\element.js" />
+    <Content Include="JS\build\element\_notes\dwsync.xml" />
+    <Content Include="JS\build\event-delegate\event-delegate-debug.js" />
+    <Content Include="JS\build\event-delegate\event-delegate-min.js" />
+    <Content Include="JS\build\event-delegate\event-delegate.js" />
+    <Content Include="JS\build\event-mouseenter\event-mouseenter-debug.js" />
+    <Content Include="JS\build\event-mouseenter\event-mouseenter-min.js" />
+    <Content Include="JS\build\event-mouseenter\event-mouseenter.js" />
+    <Content Include="JS\build\event-simulate\event-simulate-debug.js" />
+    <Content Include="JS\build\event-simulate\event-simulate-min.js" />
+    <Content Include="JS\build\event-simulate\event-simulate.js" />
+    <Content Include="JS\build\event\event-debug.js" />
+    <Content Include="JS\build\event\event-min.js" />
+    <Content Include="JS\build\event\event.js" />
+    <Content Include="JS\build\event\_notes\dwsync.xml" />
+    <Content Include="JS\build\fonts\fonts-min.css" />
+    <Content Include="JS\build\fonts\fonts.css" />
+    <Content Include="JS\build\fonts\_notes\dwsync.xml" />
+    <Content Include="JS\build\get\get-debug.js" />
+    <Content Include="JS\build\get\get-min.js" />
+    <Content Include="JS\build\get\get.js" />
+    <Content Include="JS\build\grids\grids-min.css" />
+    <Content Include="JS\build\grids\grids.css" />
+    <Content Include="JS\build\history\assets\blank.html" />
+    <Content Include="JS\build\history\history-debug.js" />
+    <Content Include="JS\build\history\history-min.js" />
+    <Content Include="JS\build\history\history.js" />
+    <Content Include="JS\build\imagecropper\assets\imagecropper-core.css" />
+    <Content Include="JS\build\imagecropper\assets\skins\sam\imagecropper-skin.css" />
+    <Content Include="JS\build\imagecropper\assets\skins\sam\imagecropper.css" />
+    <Content Include="JS\build\imagecropper\imagecropper-debug.js" />
+    <Content Include="JS\build\imagecropper\imagecropper-min.js" />
+    <Content Include="JS\build\imagecropper\imagecropper.js" />
+    <Content Include="JS\build\imageloader\imageloader-debug.js" />
+    <Content Include="JS\build\imageloader\imageloader-min.js" />
+    <Content Include="JS\build\imageloader\imageloader.js" />
+    <Content Include="JS\build\json\json-debug.js" />
+    <Content Include="JS\build\json\json-min.js" />
+    <Content Include="JS\build\json\json.js" />
+    <Content Include="JS\build\layout\assets\layout-core.css" />
+    <Content Include="JS\build\layout\assets\skins\sam\layout-skin.css" />
+    <Content Include="JS\build\layout\assets\skins\sam\layout.css" />
+    <Content Include="JS\build\layout\assets\skins\sam\layout_sprite.png" />
+    <Content Include="JS\build\layout\layout-debug.js" />
+    <Content Include="JS\build\layout\layout-min.js" />
+    <Content Include="JS\build\layout\layout.js" />
+    <Content Include="JS\build\logger\assets\logger-core.css" />
+    <Content Include="JS\build\logger\assets\logger.css" />
+    <Content Include="JS\build\logger\assets\skins\sam\logger-skin.css" />
+    <Content Include="JS\build\logger\assets\skins\sam\logger.css" />
+    <Content Include="JS\build\logger\logger-debug.js" />
+    <Content Include="JS\build\logger\logger-min.js" />
+    <Content Include="JS\build\logger\logger.js" />
+    <Content Include="JS\build\menu\assets\menu-core.css" />
+    <Content Include="JS\build\menu\assets\menu.css" />
+    <Content Include="JS\build\menu\assets\menubaritem_submenuindicator.png" />
+    <Content Include="JS\build\menu\assets\menubaritem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\menu\assets\menubaritem_submenuindicator_selected.png" />
+    <Content Include="JS\build\menu\assets\menuitem_checkbox.png" />
+    <Content Include="JS\build\menu\assets\menuitem_checkbox_disabled.png" />
+    <Content Include="JS\build\menu\assets\menuitem_checkbox_selected.png" />
+    <Content Include="JS\build\menu\assets\menuitem_submenuindicator.png" />
+    <Content Include="JS\build\menu\assets\menuitem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\menu\assets\menuitem_submenuindicator_selected.png" />
+    <Content Include="JS\build\menu\assets\menu_down_arrow.png" />
+    <Content Include="JS\build\menu\assets\menu_down_arrow_disabled.png" />
+    <Content Include="JS\build\menu\assets\menu_up_arrow.png" />
+    <Content Include="JS\build\menu\assets\menu_up_arrow_disabled.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menu-skin.css" />
+    <Content Include="JS\build\menu\assets\skins\sam\menu.css" />
+    <Content Include="JS\build\menu\assets\skins\sam\menubaritem_submenuindicator.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menubaritem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menuitem_checkbox.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menuitem_checkbox_disabled.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menuitem_submenuindicator.png" />
+    <Content Include="JS\build\menu\assets\skins\sam\menuitem_submenuindicator_disabled.png" />
+    <Content Include="JS\build\menu\menu-debug.js" />
+    <Content Include="JS\build\menu\menu-min.js" />
+    <Content Include="JS\build\menu\menu.js" />
+    <Content Include="JS\build\paginator\assets\paginator-core.css" />
+    <Content Include="JS\build\paginator\assets\skins\sam\paginator-skin.css" />
+    <Content Include="JS\build\paginator\assets\skins\sam\paginator.css" />
+    <Content Include="JS\build\paginator\paginator-debug.js" />
+    <Content Include="JS\build\paginator\paginator-min.js" />
+    <Content Include="JS\build\paginator\paginator.js" />
+    <Content Include="JS\build\profilerviewer\assets\profilerviewer-core.css" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\asc.gif" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\desc.gif" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\header_background.png" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\profilerviewer-skin.css" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\profilerviewer.css" />
+    <Content Include="JS\build\profilerviewer\assets\skins\sam\wait.gif" />
+    <Content Include="JS\build\profilerviewer\profilerviewer-debug.js" />
+    <Content Include="JS\build\profilerviewer\profilerviewer-min.js" />
+    <Content Include="JS\build\profilerviewer\profilerviewer.js" />
+    <Content Include="JS\build\profiler\profiler-debug.js" />
+    <Content Include="JS\build\profiler\profiler-min.js" />
+    <Content Include="JS\build\profiler\profiler.js" />
+    <Content Include="JS\build\progressbar\assets\progressbar-core.css" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\back-h.png" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\back-v.png" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\bar-h.png" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\bar-v.png" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\progressbar-skin.css" />
+    <Content Include="JS\build\progressbar\assets\skins\sam\progressbar.css" />
+    <Content Include="JS\build\progressbar\progressbar-debug.js" />
+    <Content Include="JS\build\progressbar\progressbar-min.js" />
+    <Content Include="JS\build\progressbar\progressbar.js" />
+    <Content Include="JS\build\reset-fonts-grids\reset-fonts-grids.css" />
+    <Content Include="JS\build\reset-fonts\reset-fonts.css" />
+    <Content Include="JS\build\reset\reset-min.css" />
+    <Content Include="JS\build\reset\reset.css" />
+    <Content Include="JS\build\resize\assets\resize-core.css" />
+    <Content Include="JS\build\resize\assets\skins\sam\layout_sprite.png" />
+    <Content Include="JS\build\resize\assets\skins\sam\resize-skin.css" />
+    <Content Include="JS\build\resize\assets\skins\sam\resize.css" />
+    <Content Include="JS\build\resize\resize-debug.js" />
+    <Content Include="JS\build\resize\resize-min.js" />
+    <Content Include="JS\build\resize\resize.js" />
+    <Content Include="JS\build\selector\selector-debug.js" />
+    <Content Include="JS\build\selector\selector-min.js" />
+    <Content Include="JS\build\selector\selector.js" />
+    <Content Include="JS\build\slider\assets\bg-fader.gif" />
+    <Content Include="JS\build\slider\assets\bg-h.gif" />
+    <Content Include="JS\build\slider\assets\bg-v-e.gif" />
+    <Content Include="JS\build\slider\assets\bg-v.gif" />
+    <Content Include="JS\build\slider\assets\left-thumb.png" />
+    <Content Include="JS\build\slider\assets\right-thumb.png" />
+    <Content Include="JS\build\slider\assets\skins\sam\bg-h.gif" />
+    <Content Include="JS\build\slider\assets\skins\sam\bg-v.gif" />
+    <Content Include="JS\build\slider\assets\skins\sam\slider-skin.css" />
+    <Content Include="JS\build\slider\assets\skins\sam\slider.css" />
+    <Content Include="JS\build\slider\assets\slider-core.css" />
+    <Content Include="JS\build\slider\assets\slider-skin.css" />
+    <Content Include="JS\build\slider\assets\thumb-bar.gif" />
+    <Content Include="JS\build\slider\assets\thumb-e.gif" />
+    <Content Include="JS\build\slider\assets\thumb-fader.gif" />
+    <Content Include="JS\build\slider\assets\thumb-n.gif" />
+    <Content Include="JS\build\slider\assets\thumb-s.gif" />
+    <Content Include="JS\build\slider\assets\thumb-w.gif" />
+    <Content Include="JS\build\slider\slider-debug.js" />
+    <Content Include="JS\build\slider\slider-min.js" />
+    <Content Include="JS\build\slider\slider.js" />
+    <Content Include="JS\build\storage\storage-debug.js" />
+    <Content Include="JS\build\storage\storage-min.js" />
+    <Content Include="JS\build\storage\storage.js" />
+    <Content Include="JS\build\stylesheet\stylesheet-debug.js" />
+    <Content Include="JS\build\stylesheet\stylesheet-min.js" />
+    <Content Include="JS\build\stylesheet\stylesheet.js" />
+    <Content Include="JS\build\swfdetect\swfdetect-debug.js" />
+    <Content Include="JS\build\swfdetect\swfdetect-min.js" />
+    <Content Include="JS\build\swfdetect\swfdetect.js" />
+    <Content Include="JS\build\swfstore\swf.js" />
+    <Content Include="JS\build\swfstore\swfstore-debug.js" />
+    <Content Include="JS\build\swfstore\swfstore-min.js" />
+    <Content Include="JS\build\swfstore\swfstore.js" />
+    <Content Include="JS\build\swfstore\swfstore.swf" />
+    <Content Include="JS\build\swf\swf-debug.js" />
+    <Content Include="JS\build\swf\swf-min.js" />
+    <Content Include="JS\build\swf\swf.js" />
+    <Content Include="JS\build\tabview\assets\border_tabs.css" />
+    <Content Include="JS\build\tabview\assets\loading.gif" />
+    <Content Include="JS\build\tabview\assets\skin-sam.css" />
+    <Content Include="JS\build\tabview\assets\skins\sam\tabview-skin.css" />
+    <Content Include="JS\build\tabview\assets\skins\sam\tabview.css" />
+    <Content Include="JS\build\tabview\assets\tabview-core.css" />
+    <Content Include="JS\build\tabview\assets\tabview.css" />
+    <Content Include="JS\build\tabview\tabview-debug.js" />
+    <Content Include="JS\build\tabview\tabview-min.js" />
+    <Content Include="JS\build\tabview\tabview.js" />
+    <Content Include="JS\build\treeview\assets\skins\sam\check0.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\check1.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\check2.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\loading.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\treeview-loading.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\treeview-skin.css" />
+    <Content Include="JS\build\treeview\assets\skins\sam\treeview-sprite.gif" />
+    <Content Include="JS\build\treeview\assets\skins\sam\treeview.css" />
+    <Content Include="JS\build\treeview\assets\skins\sam\_notes\dwsync.xml" />
+    <Content Include="JS\build\treeview\assets\treeview-core.css" />
+    <Content Include="JS\build\treeview\treeview-debug.js" />
+    <Content Include="JS\build\treeview\treeview-min.js" />
+    <Content Include="JS\build\treeview\treeview.js" />
+    <Content Include="JS\build\treeview\_notes\dwsync.xml" />
+    <Content Include="JS\build\uploader\assets\uploader.swf" />
+    <Content Include="JS\build\uploader\uploader-debug.js" />
+    <Content Include="JS\build\uploader\uploader-min.js" />
+    <Content Include="JS\build\uploader\uploader.js" />
+    <Content Include="JS\build\utilities\utilities.js" />
+    <Content Include="JS\build\yahoo-dom-event\yahoo-dom-event.js" />
+    <Content Include="JS\build\yahoo-dom-event\_notes\dwsync.xml" />
+    <Content Include="JS\build\yahoo\yahoo-debug.js" />
+    <Content Include="JS\build\yahoo\yahoo-min.js" />
+    <Content Include="JS\build\yahoo\yahoo.js" />
+    <Content Include="JS\build\yuiloader-dom-event\yuiloader-dom-event.js" />
+    <Content Include="JS\build\yuiloader\yuiloader-debug.js" />
+    <Content Include="JS\build\yuiloader\yuiloader-min.js" />
+    <Content Include="JS\build\yuiloader\yuiloader.js" />
+    <Content Include="JS\build\yuiloader\_notes\dwsync.xml" />
+    <Content Include="JS\build\yuitest\assets\skins\sam\yuitest-skin.css" />
+    <Content Include="JS\build\yuitest\assets\skins\sam\yuitest.css" />
+    <Content Include="JS\build\yuitest\assets\testlogger.css" />
+    <Content Include="JS\build\yuitest\assets\yuitest-core.css" />
+    <Content Include="JS\build\yuitest\yuitest-debug.js" />
+    <Content Include="JS\build\yuitest\yuitest-min.js" />
+    <Content Include="JS\build\yuitest\yuitest.js" />
+    <Content Include="JS\build\yuitest\yuitest_core-debug.js" />
+    <Content Include="JS\build\yuitest\yuitest_core-min.js" />
+    <Content Include="JS\build\yuitest\yuitest_core.js" />
+    <Content Include="JS\dialog.js" />
+    <Content Include="JS\jquery-1.3.2.min.js" />
+    <Content Include="JS\json.js" />
+    <Content Include="JS\MyArea.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Main.aspx" />
+    <Content Include="PartArea.aspx" />
+    <Content Include="Popedom.aspx" />
+    <Content Include="Report.aspx" />
+    <Content Include="Role.aspx" />
+    <Content Include="SearchContact.aspx" />
+    <Content Include="SearchCustomer.aspx" />
+    <Content Include="SendMail.aspx" />
+    <Content Include="Settings.aspx" />
+    <Content Include="SmtpConfig.aspx" />
+    <Content Include="User.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddContacts.aspx.cs">
+      <DependentUpon>AddContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddContacts.aspx.designer.cs">
+      <DependentUpon>AddContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomer.aspx.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.aspx.designer.cs">
+      <DependentUpon>AddCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFllowUpPlan.aspx.cs">
+      <DependentUpon>AddFllowUpPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFllowUpPlan.aspx.designer.cs">
+      <DependentUpon>AddFllowUpPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ajax.cs" />
+    <Compile Include="Area.aspx.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Area.aspx.designer.cs">
+      <DependentUpon>Area.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Assigning.aspx.cs">
+      <DependentUpon>Assigning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assigning.aspx.designer.cs">
+      <DependentUpon>Assigning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassWord.aspx.cs">
+      <DependentUpon>ChangePassWord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassWord.aspx.designer.cs">
+      <DependentUpon>ChangePassWord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Area.ascx.cs">
+      <DependentUpon>Area.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Area.ascx.designer.cs">
+      <DependentUpon>Area.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerCombine.aspx.cs">
+      <DependentUpon>CustomerCombine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerCombine.aspx.designer.cs">
+      <DependentUpon>CustomerCombine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerList.aspx.cs">
+      <DependentUpon>CustomerList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerList.aspx.designer.cs">
+      <DependentUpon>CustomerList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerSource.aspx.cs">
+      <DependentUpon>CustomerSource.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerSource.aspx.designer.cs">
+      <DependentUpon>CustomerSource.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerState.aspx.cs">
+      <DependentUpon>CustomerState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerState.aspx.designer.cs">
+      <DependentUpon>CustomerState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerTrade.aspx.cs">
+      <DependentUpon>CustomerTrade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerTrade.aspx.designer.cs">
+      <DependentUpon>CustomerTrade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerType.aspx.cs">
+      <DependentUpon>CustomerType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerType.aspx.designer.cs">
+      <DependentUpon>CustomerType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditContacts.aspx.cs">
+      <DependentUpon>EditContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditContacts.aspx.designer.cs">
+      <DependentUpon>EditContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCustomer.aspx.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCustomer.aspx.designer.cs">
+      <DependentUpon>EditCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFllowUpPlan.aspx.cs">
+      <DependentUpon>EditFllowUpPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditFllowUpPlan.aspx.designer.cs">
+      <DependentUpon>EditFllowUpPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainTemplate.Master.cs">
+      <DependentUpon>MainTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainTemplate.Master.designer.cs">
+      <DependentUpon>MainTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PartArea.aspx.cs">
+      <DependentUpon>PartArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartArea.aspx.designer.cs">
+      <DependentUpon>PartArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Popedom.aspx.cs">
+      <DependentUpon>Popedom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Popedom.aspx.designer.cs">
+      <DependentUpon>Popedom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Role.aspx.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Role.aspx.designer.cs">
+      <DependentUpon>Role.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchContact.aspx.cs">
+      <DependentUpon>SearchContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchContact.aspx.designer.cs">
+      <DependentUpon>SearchContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchCustomer.aspx.designer.cs">
+      <DependentUpon>SearchCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendMail.aspx.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendMail.aspx.designer.cs">
+      <DependentUpon>SendMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmtpConfig.aspx.cs">
+      <DependentUpon>SmtpConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmtpConfig.aspx.designer.cs">
+      <DependentUpon>SmtpConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\email.config" />
+    <None Include="JS\build\assets\skins\sam\sprite.psd" />
+    <Content Include="MainTemplate.Master" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EAPP.CRM.BLL\EAPP.CRM.BLL.csproj">
+      <Project>{D8AABBB8-F3C0-4079-A3BF-53011E91161F}</Project>
+      <Name>EAPP.CRM.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EAPP.CRM.Common\EAPP.CRM.Common.csproj">
+      <Project>{B72980A8-69E2-4CF2-BCC8-CE40E8599459}</Project>
+      <Name>EAPP.CRM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EAPP.CRM.Config\EAPP.CRM.Config.csproj">
+      <Project>{4E8B89B0-7016-4BD7-845D-D88745F480A0}</Project>
+      <Name>EAPP.CRM.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EAPP.CRM.Model\EAPP.CRM.Model.csproj">
+      <Project>{599C42CA-C52F-4729-8DBD-822B15DD3F01}</Project>
+      <Name>EAPP.CRM.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2348</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.BLL", "EAPP.CRM.BLL\EAPP.CRM.BLL.csproj", "{D8AABBB8-F3C0-4079-A3BF-53011E91161F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.DAL", "EAPP.CRM.DAL\EAPP.CRM.DAL.csproj", "{1CC11A0E-AC7F-4D60-90FF-BF6BDCB094BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.Config", "EAPP.CRM.Config\EAPP.CRM.Config.csproj", "{4E8B89B0-7016-4BD7-845D-D88745F480A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.Model", "EAPP.CRM.Model\EAPP.CRM.Model.csproj", "{599C42CA-C52F-4729-8DBD-822B15DD3F01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.Common", "EAPP.CRM.Common\EAPP.CRM.Common.csproj", "{B72980A8-69E2-4CF2-BCC8-CE40E8599459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.DataAccess", "EAPP.CRM.DataAccess\EAPP.CRM.DataAccess.csproj", "{BAA1290D-EFB5-4A2A-BD1A-C5590BB68465}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAPP.CRM.Web", "EAPP.CRM.Web\EAPP.CRM.Web.csproj", "{DC7587BC-695F-4970-9291-C159FEC84B03}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sc-sc.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EAPP.CRM.BLL\\EAPP.CRM.BLL.csproj
+		SccProjectName1 = EAPP.CRM.BLL
+		SccLocalPath1 = EAPP.CRM.BLL
+		SccProjectUniqueName2 = EAPP.CRM.Common\\EAPP.CRM.Common.csproj
+		SccProjectName2 = EAPP.CRM.Common
+		SccLocalPath2 = EAPP.CRM.Common
+		SccProjectUniqueName3 = EAPP.CRM.Config\\EAPP.CRM.Config.csproj
+		SccProjectName3 = EAPP.CRM.Config
+		SccLocalPath3 = EAPP.CRM.Config
+		SccProjectUniqueName4 = EAPP.CRM.DAL\\EAPP.CRM.DAL.csproj
+		SccProjectName4 = EAPP.CRM.DAL
+		SccLocalPath4 = EAPP.CRM.DAL
+		SccProjectUniqueName5 = EAPP.CRM.DataAccess\\EAPP.CRM.DataAccess.csproj
+		SccProjectName5 = EAPP.CRM.DataAccess
+		SccLocalPath5 = EAPP.CRM.DataAccess
+		SccProjectUniqueName6 = EAPP.CRM.Model\\EAPP.CRM.Model.csproj
+		SccProjectName6 = EAPP.CRM.Model
+		SccLocalPath6 = EAPP.CRM.Model
+		SccProjectUniqueName7 = EAPP.CRM.Web\\EAPP.CRM.Web.csproj
+		SccProjectName7 = EAPP.CRM.Web
+		SccLocalPath7 = EAPP.CRM.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8AABBB8-F3C0-4079-A3BF-53011E91161F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8AABBB8-F3C0-4079-A3BF-53011E91161F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8AABBB8-F3C0-4079-A3BF-53011E91161F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8AABBB8-F3C0-4079-A3BF-53011E91161F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC11A0E-AC7F-4D60-90FF-BF6BDCB094BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC11A0E-AC7F-4D60-90FF-BF6BDCB094BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC11A0E-AC7F-4D60-90FF-BF6BDCB094BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC11A0E-AC7F-4D60-90FF-BF6BDCB094BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8B89B0-7016-4BD7-845D-D88745F480A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8B89B0-7016-4BD7-845D-D88745F480A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8B89B0-7016-4BD7-845D-D88745F480A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8B89B0-7016-4BD7-845D-D88745F480A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{599C42CA-C52F-4729-8DBD-822B15DD3F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{599C42CA-C52F-4729-8DBD-822B15DD3F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{599C42CA-C52F-4729-8DBD-822B15DD3F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{599C42CA-C52F-4729-8DBD-822B15DD3F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72980A8-69E2-4CF2-BCC8-CE40E8599459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72980A8-69E2-4CF2-BCC8-CE40E8599459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72980A8-69E2-4CF2-BCC8-CE40E8599459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72980A8-69E2-4CF2-BCC8-CE40E8599459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAA1290D-EFB5-4A2A-BD1A-C5590BB68465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAA1290D-EFB5-4A2A-BD1A-C5590BB68465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAA1290D-EFB5-4A2A-BD1A-C5590BB68465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAA1290D-EFB5-4A2A-BD1A-C5590BB68465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7587BC-695F-4970-9291-C159FEC84B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7587BC-695F-4970-9291-C159FEC84B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7587BC-695F-4970-9291-C159FEC84B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7587BC-695F-4970-9291-C159FEC84B03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

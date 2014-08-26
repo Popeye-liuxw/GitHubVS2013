@@ -1,0 +1,202 @@
+﻿body
+{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+}
+
+ul{ list-style:none; margin:0px; padding:0px;}
+li{ list-style:none; margin:0px; padding:0px;}
+
+h4{ margin-top:2px;}
+
+
+.bigBtn{ font-size:14px; padding:3px; width:80px;}
+
+.btn{ padding-left:4px; padding-right:4px; padding-top:2px; padding-bottom:2px; font-size:12px;}
+
+a{ color:#2a5db0 }
+a:hover{ color:#ff8822}
+/******************************* header **********************/
+
+#header{ border-bottom:2px solid #3E6AB5; height:60px;margin-bottom:10px; overflow:hidden}
+#header .main{width:980px; margin:0 auto; }
+
+
+#header .logo{ float:left; width:12px;}
+#header .logo{ font-size:30px; font-family:微软雅黑; padding-top:10px;}
+
+#header .mainNav{margin-top:32px; float:left; margin-left:120px; width:400px;}
+#header .mainNav li{ font-size:14px; float:left; width:60px; padding-left:8px;padding-right:8px;padding-top:6px;*padding-top:6px;padding-top:6px\0;padding-bottom:6px;background-color:#9BB4DD; text-align:center; margin-right:4px;}
+#header .mainNav li a{ text-decoration:none; color:#fff}
+#header .mainNav .on{ background-color:#3E6AB5; font-weight:bold;}
+#header .mainNav .on a{color:#fff;}
+
+#header .topLink{ float:right; margin-top:30px;}
+#header .topLink a{ font-size:12px;}
+
+/***************************** footer ***********************/
+#footer{width:980px; margin:0 auto; border-top:1px solid #bbccff; padding-top:5px; color:#333; font-size:12px; overflow:hidden; margin-top:10px;}
+
+
+
+/***************************** center *************************/
+
+#content{ overflow:hidden;}
+#center{width:980px; margin:0 auto; margin-bottom:10px;}
+
+
+#left{
+	float:left;
+	clear:left;
+	width:170px;
+	margin:0px;	
+	margin-right:2px;
+	padding-right:10px;
+
+}
+#left .leftTitle{ background-color:#B9CBE8; padding:4px;}
+#left .list{ border:2px solid #B9CBE8; padding:4px;}
+#left .list li{ margin-top:5px; padding-left:10px;}
+#left .list li a{ font-size:12px;}
+
+
+
+
+#right{	float:left;	border-left:2px solid #B9CBE8; padding-left:8px;width:785px;}
+
+
+
+#right #right_top{ background-color:#B9CBE8; padding-top:5px; padding-bottom:5px; padding-left:3px;}
+
+
+#right .gridview{border:0px; margin-top:5px;}
+#right .gridview th{ border:0px; border-bottom:1px solid #ddd; font-size:12px; text-align:left; padding-top:2px;}
+#right .gridview td{ border:0px; border-bottom:1px solid #ddd; font-size:12px; padding-top:2px; padding-bottom:2px;}
+#right .gridview td a{ font-size:12px;}
+
+
+#right h4{ font-size:14px; border-bottom:1px solid #B9CBE8; padding:5px; margin-bottom:5px;}
+#customer h4{ font-size:14px; border-bottom:1px solid #ccc; padding:5px;}
+#right .inputTable{ width:100%;}
+#right .inputTable th{ text-align:right; vertical-align:top; padding-top:3px; font-weight:normal; font-size:12px;}
+.inputTable th{ text-align:right; vertical-align:top; padding-top:3px; font-weight:normal; font-size:12px;}
+.inputTable td{ text-align:left; vertical-align:top; font-size:12px;}
+
+#right .actionArea{ text-align:center; background-color:#B9CBE8; padding:5px;}
+
+/*
+	日期控件
+*/
+
+ #container .bd form
+{
+    clear: left;
+}
+        
+#container .bd
+{
+    padding: 0;
+}
+#container .hd
+{
+    text-align: left;
+}
+#container .ft .button-group
+{
+    text-align: center;
+}        
+#container_c.yui-overlay-hidden table
+{
+	 *display:none;
+}
+
+#cal
+{
+    border: none;
+    padding: 1em;
+}
+
+.datefield
+{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    white-space: nowrap;
+    border: 1px solid black;
+    background-color: #eee;
+    width: 25em;
+    padding: 5px;
+}
+
+.datefield input, .datefield button, .datefield label
+{
+    vertical-align: middle;
+}
+
+.datefield label
+{
+    font-weight: bold;
+}
+
+.datefield input
+{
+    width: 15em;
+}
+.datefield button
+{
+    padding: 0 5px 0 5px;
+    margin-left: 2px;
+}
+
+.datefield button img
+{
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.box
+{
+    position: relative;
+    height: 30em;
+}
+
+
+
+
+
+.gridview{border:0px; margin-top:5px;}
+.gridview th{ border:0px; border-bottom:1px solid #ddd; font-size:12px; text-align:left; padding-top:2px;}
+.gridview td{ border:0px; border-bottom:1px solid #ddd; font-size:12px;}
+.gridview td a{ font-size:12px;}
+
+
+/************  Main.aspx ******************/
+.h4title{ font-size:14px; padding:5px; background-color:#B9CBE8; margin-bottom:0px;}
+
+
+.mainbd{border:1px solid #e3e9ff; overflow:hidden;}
+.h80{ height:80px;}
+.link{ padding:10px; line-height:200%;}
+.link li
+        { font-size:12px;
+            width: 30%;
+            float: left;
+            margin-right: 10px;}
+.search{ padding:10px; line-height:200%;}
+
+.mainct{font-size:14px; font-weight:bold; padding:5px; background-color:#B9CBE8; margin-bottom:0px;}
+.lchart{ height:300px; margin-top:0px;}
+.rchart{ height:300px; margin-top:0px;}
+
+
+/*sendmail.aspx*/
+
+.sendmail{width: 100%; background: #B9CBE8; padding:5px; padding-top:10px;}
+.sendmail .contact{float: right; width: 110px; clear: both; background: #f8f8f8; padding:3px;}
+.sendmail .contact .tit{ background-color:#bbccff; text-align:center; padding:2px;}
+
+
+.tinfo{ background-color:#B9CBE8;width: 100%;}
+.tinfo td,.tinfo th{ vertical-align:top; padding:5px;}

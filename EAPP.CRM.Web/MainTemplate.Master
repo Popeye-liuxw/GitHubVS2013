@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTemplate.Master.cs"
+    Inherits="EAPP.CRM.Web.MainTemplate" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>中启创科技 客户关系管理系统</title>
+    <link href="css/main.css" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript" src="js/base.js"></script>
+
+    <script type="text/javascript">
+
+        function xy_Sel_CurLeftMenu()
+        {
+            var curPage = location.href;
+            
+            var index = curPage.lastIndexOf("/");
+            
+            curPage = curPage.substr(index + 1,curPage.length-index);
+            
+            curPage = curPage.substr(0,curPage.indexOf(".")).toLowerCase();
+            
+            if(curPage == "")curPage ="index";
+            
+            for(var i=1;i<=8;i++){
+                if(document.getElementById("div_" + i)){
+                    document.getElementById("div_" + i).style.display ="none";
+                }
+            }
+            
+            var allAry = new Array();
+            
+            allAry[0] = new Array("1","main");
+            allAry[1] = new Array("2","customerlist","searchcontact","sendmail","customer","addcontacts","addcustomer","addfllowupplan","editcontacts","editfllowupplan","editcustomer","customercombine","newlist","addnews","editnew","engagelist","engageadd","engageedit","engageinfo","resumelis","certificatelist","certificateadd","certificateinfo");
+            allAry[2] = new Array("3","report"); 
+            allAry[3] = new Array("4","customersource","customerstate","customertype","department","user","smtpconfig","role","changepassword","popedom","adduser","edituser","customertrade","area"); 
+            
+            for(var i=0;i<allAry.length;i++)
+            {
+                for(j=1;j<allAry[i].length;j++)
+                {
+                    if(curPage == allAry[i][j])
+                    {   
+                        $("li_" + allAry[i][0]).className = "on";
+                        return;
+                    }
+                }
+            }
+        }
+        
+        window.onload = xy_Sel_CurLeftMenu;
+        
+    </script>
+
+</head>
+<body class="yui-skin-sam">
+    <form id="form1" runat="server">
+    <div>
+        <div id="header">
+            <div class="main">
+                <div class="logo"><img src="/Images/logo.jpg" alt="Primemobi" /></div>
+                <ul class="mainNav">
+                    <li id="li_1">
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Main.aspx">主页</asp:HyperLink></li>
+                    <li id="li_2">
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerList.aspx">客户</asp:HyperLink></li>
+                    <li id="li_3">
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Report.aspx">报表</asp:HyperLink></li>
+                    <li id="li_4">
+                        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="EditUser.aspx">设置</asp:HyperLink></li>
+                </ul>
+                <div class="topLink">
+                    <a href="Logout.aspx">退出</a> | <a href="/help/index.htm">帮助中心</a>
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <asp:ContentPlaceHolder ID="contentPlaceHolderMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            Copyright © 2013 Primemobi All Rights Reserved.
+        </div>
+    </div>
+    </form>
+</body>
+</html>

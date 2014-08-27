@@ -15,6 +15,7 @@ namespace EAPP.CRM.BLL
     {
 		private static readonly EAPP.CRM.DAL.Dept DAL = new EAPP.CRM.DAL.Dept();
 		
+
         /// <summary>
         /// 添加部门信息表
         /// </summary>

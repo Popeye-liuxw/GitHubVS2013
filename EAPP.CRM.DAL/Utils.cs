@@ -21,6 +21,7 @@ namespace EAPP.CRM.DAL
                 new SqlParameter("@tableName", tableName),
                 new SqlParameter("@strWhere", where)
             };
+
             return EAPP.CRM.DataAccess.SqlHelper.ExecuteNonQuery(System.Data.CommandType.StoredProcedure, "proc_Delete", pars);
         }
 

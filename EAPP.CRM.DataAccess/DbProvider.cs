@@ -9,6 +9,7 @@ namespace EAPP.CRM.DataAccess
 {
     public class DbProvider
     {
+        //暂时不使用
         //private DbProvider()
         //{ }
 

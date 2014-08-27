@@ -24,6 +24,7 @@ namespace EAPP.CRM.BLL
         {
 			if (info == null) return 0;
             return DAL.Insert(info);
+            //不做介绍
         }
 
         /// <summary>
